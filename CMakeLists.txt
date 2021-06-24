@@ -11,7 +11,7 @@ FetchContent_MakeAvailable(universal)
 
 
 execute_process(
-    COMMAND sandpiper -i ${CMAKE_CURRENT_SOURCE_DIR}/src//hw/alu.tlv -o alu.sv --default_includes)
+    COMMAND "yes" |  sandpiper-saas -i ${CMAKE_CURRENT_SOURCE_DIR}/src//hw/alu.tlv -o alu.sv --default_includes)
   
 find_package(verilator HINTS $ENV{VERILATOR_ROOT})
 
